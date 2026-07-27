@@ -1,7 +1,16 @@
 aid: gowabi
 name: GoWabi
-description: GoWabi is a company surfaced as a portfolio company of 500-global and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  GoWabi is a Bangkok-based beauty and wellness booking marketplace serving
+  Thailand and selected markets across Southeast Asia. Consumers use its web and
+  mobile apps to discover and book more than 5,000 spas, massage studios, beauty
+  clinics, nail, hair, dental, fitness, and wellness providers, with discounted
+  deals, cashback rewards, and multiple payment options (credit card, Alipay,
+  BNPL). GoWabi also offers a B2B SaaS/CRM tool integrated with partner
+  point-of-sale systems to help salons, spas, clinics, and studios manage
+  bookings and operations. It is backed by 500 Global. GoWabi operates a private
+  mobile app backend (mobile-api.gowabi.com) but publishes no public developer
+  API, documentation, or portal at this time.
 url: https://raw.githubusercontent.com/api-evangelist/gowabi/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,11 +18,31 @@ x-backed-by:
 - 500-global
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
+image: https://images.gowabi.com/logo-5c2c54ab6d5eabef6ac66446a7fea45deb271f962caa44960577313e240114c6.png
 tags:
 - Company
+- Beauty
+- Wellness
+- Booking
+- Marketplace
+- Spa
+- Consumer
+- Southeast Asia
+- Thailand
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,3 +52,20 @@ maintainers:
 common:
 - type: Website
   url: https://gowabi.com
+- type: Blog
+  url: https://www.gowabi.com/blog
+- type: Support
+  url: https://www.gowabi.com/en/customer_faq
+- type: TermsOfService
+  url: https://www.gowabi.com/en/terms_and_conditions
+- type: PrivacyPolicy
+  url: https://www.gowabi.com/en/privacy_policy_consumer_app
+- type: SignUp
+  url: https://www.gowabi.com/en/users/sign_in
+- type: DomainSecurity
+  url: security/gowabi-domain-security.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

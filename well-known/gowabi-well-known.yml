@@ -1,0 +1,46 @@
+generated: '2026-07-19'
+method: searched
+source: live probes of gowabi.com hosts
+note: >-
+  GoWabi publishes no /.well-known discovery documents. The consumer web host
+  redirects all /.well-known/* paths to the SPA (301/302); the private mobile
+  app backend (mobile-api.gowabi.com) returns 404. No security.txt, OIDC, OAuth
+  authorization-server, api-catalog, or ai-plugin document was found. Recorded
+  so re-runs skip re-probing. Absence is valid, expected data.
+hosts:
+- host: gowabi.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 301
+  - path: /.well-known/openid-configuration
+    status: 301
+  - path: /.well-known/oauth-authorization-server
+    status: 301
+  - path: /.well-known/api-catalog
+    status: 301
+  - path: /.well-known/ai-plugin.json
+    status: 301
+- host: www.gowabi.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 302
+  - path: /.well-known/openid-configuration
+    status: 302
+  - path: /.well-known/oauth-authorization-server
+    status: 302
+  - path: /.well-known/api-catalog
+    status: 302
+  - path: /.well-known/ai-plugin.json
+    status: 302
+- host: mobile-api.gowabi.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
